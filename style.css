@@ -98,3 +98,34 @@ body{
     color: var(--silver);
     font-size: 0.94rem;
 }
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.third-section img{
+    max-width: 6.25rem;
+}
+
+.third-section strong{
+    color: var(--silver);
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.third-section h2{
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+    margin-block: 0.6rem;
+}
+
+.third-section p{
+    color: var(--gunmetal);
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
