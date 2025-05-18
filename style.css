@@ -45,6 +45,7 @@ header button{
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile{
@@ -78,6 +79,10 @@ header .mobile a{
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
+}
+
+header .desktop{
+    display: none;
 }
 
 main{
@@ -183,17 +188,11 @@ main{
     line-height: 1.625rem;
 }
 
+.third-section a{
+    text-decoration: none;
+}
+
 @media(min-width: 1110px){
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.75rem;
-    }
-
-    .primary-section{
-        grid-column: 1 / 3;
-    }
-
     header > button{
         display: none;
     }
@@ -210,4 +209,53 @@ main{
         color: var(--gunmetal);
 
     }
+
+    header .desktop a:hover{
+        color: var(--vermillion);
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primary-section{
+        grid-column: 1 / 3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primary-section picture{
+        grid-column: 1 / 3;
+    }
+
+    .primary-section img{
+        margin: 0;
+    }
+
+    .primary-section h1{
+        font-size: 3.5rem;
+    }
+
+    .primary-section button:hover{
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+
+    .second-section h2{
+        font-size: 2.5rem;
+    }
+
+    .third-section{
+        display: flex;
+        grid-column: 1 / 4;
+    }
+
+    .third-section h2:hover{
+        color: var(--vermillion);
+    }
+
 }
